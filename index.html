@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Průvodce výběrem knih</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial,Helvetica,sans-serif;
+            background:#f4f6f8;
+            color:#333;
+            padding:40px 20px;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            background:white;
+            border-radius:15px;
+            padding:35px;
+            box-shadow:0 10px 30px rgba(0,0,0,.1);
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:15px;
+            color:#1f4b6e;
+        }
+
+        p{
+            text-align:center;
+            margin-bottom:25px;
+            line-height:1.6;
+        }
+
+        textarea{
+            width:100%;
+            height:140px;
+            padding:15px;
+            font-size:16px;
+            border:1px solid #ccc;
+            border-radius:10px;
+            resize:vertical;
+        }
+
+        button{
+            margin-top:20px;
+            width:100%;
+            padding:15px;
+            background:#1f4b6e;
+            color:white;
+            border:none;
+            border-radius:10px;
+            cursor:pointer;
+            font-size:18px;
+        }
+
+        button:hover{
+            background:#163954;
+        }
+
+        #results{
+            margin-top:35px;
+        }
+
+        .book{
+            border:1px solid #ddd;
+            border-radius:10px;
+            padding:20px;
+            margin-bottom:20px;
+            background:#fafafa;
+        }
+
+        .book h2{
+            color:#1f4b6e;
+            margin-bottom:8px;
+        }
+
+        .author{
+            color:#666;
+            margin-bottom:12px;
+        }
+
+        .why{
+            margin-top:12px;
+            line-height:1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Průvodce výběrem knih</h1>
+
+<p>
+
+Popište vlastními slovy svou životní situaci nebo téma,
+které právě řešíte.
+
+</p>
+
+<textarea id="query"
+placeholder="Například: Po rozvodu se cítím prázdná, mám úzkosti a nevím jak dál."></textarea>
+
+<button onclick="searchBooks()">
+
+Doporučit knihy
+
+</button>
+
+<div id="results"></div>
+
+</div>
+
+<script>
+
+const books=[];
+
+function searchBooks(){
+
+document.getElementById("results").innerHTML=
+
+"<p>Zatím je připravena kostra aplikace. Databázi knih doplníme v dalším kroku.</p>";
+
+}
+
+</script>
+
+</body>
+</html>
