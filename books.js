@@ -437,4 +437,183 @@ const books = [
     why:
         "Pro zájemce o celostní přístup ke zdraví."
 }
-    ];
+,
+
+{
+    title: "Fit pro život znamená zdravý a štíhlý",
+    author: "Harvey Diamond",
+
+    keywords: [
+        "výživa","strava","hubnutí","zdraví","energie",
+        "únava","trávení","nadváha","ovoce","zelenina",
+        "zdravý životní styl","metabolismus","detox","jídlo",
+        "zdravé stravování","vitalita","štíhlost","výživa těla"
+    ],
+
+    description:
+        "Známá kniha představující principy přirozeného stravování a kombinace potravin.",
+
+    why:
+        "Vhodná pro každého, kdo chce změnit jídelníček a zlepšit své zdraví."
+},
+
+{
+    title: "Hladověním pro zdraví",
+    author: "MUDr. Vilma Partyková",
+
+    keywords: [
+        "půst","hladovění","detox","očista",
+        "zdraví","výživa","nemoc","regenerace",
+        "metabolismus","očista organismu","energie"
+    ],
+
+    description:
+        "Kniha popisuje léčebné účinky řízeného půstu.",
+
+    why:
+        "Pro čtenáře, kteří se zajímají o přirozené způsoby regenerace organismu."
+},
+
+{
+    title: "Nejzdravější výživa",
+    author: "Helmut Wandmaker",
+
+    keywords: [
+        "výživa","ovoce","zelenina","syrová strava",
+        "zdraví","nemoc","vitaminy","minerály",
+        "stravování","životní styl","energie","detox"
+    ],
+
+    description:
+        "Publikace o významu přirozené stravy pro zdraví člověka.",
+
+    why:
+        "Doporučujeme zájemcům o zdravý životní styl a výživu."
+},
+
+{
+    title: "Čerstvé ovocné a zeleninové šťávy",
+    author: "Dr. Norman W. Walker",
+
+    keywords: [
+        "šťávy","ovoce","zelenina","výživa",
+        "vitaminy","minerály","detox","zdraví",
+        "šťávování","regenerace","imunita"
+    ],
+
+    description:
+        "Praktická kniha o využití čerstvých šťáv pro podporu zdraví.",
+
+    why:
+        "Vhodná pro každého, kdo chce zařadit více čerstvé stravy."
+},
+
+{
+    title: "Pránická výživa – Jiná cesta ke spiritualitě",
+    author: "Henri Monfort",
+
+    keywords: [
+        "prána","spiritualita","výživa",
+        "energie","meditace","vědomí",
+        "duchovní růst","životní energie","sebepoznání"
+    ],
+
+    description:
+        "Kniha představuje netradiční pohled na výživu a spiritualitu.",
+
+    why:
+        "Pro čtenáře zajímající se o duchovní rozvoj a alternativní přístupy."
+},
+
+{
+    title: "Miluj svůj život",
+    author: "Louise L. Hay",
+
+    keywords: [
+        "afirmace","sebeláska","sebevědomí",
+        "psychosomatika","uzdravení",
+        "pozitivní myšlení","životní změna",
+        "vnitřní klid","odpuštění","emoce",
+        "nemoc","vztahy"
+    ],
+
+    description:
+        "Jedna z nejznámějších knih o propojení psychiky, těla a pozitivních změn.",
+
+    why:
+        "Doporučujeme lidem, kteří chtějí změnit svůj přístup k sobě i ke svému zdraví."
+},
+
+{
+    title: "Když tělo řekne ne",
+    author: "Gabor Maté",
+
+    keywords: [
+        "psychosomatika","chronický stres",
+        "nemoc","emoce","vyhoření",
+        "potlačené emoce","hranice",
+        "autoimunitní onemocnění",
+        "zdraví","stres","únava","tělo"
+    ],
+
+    description:
+        "Autor vysvětluje, jak dlouhodobý stres a potlačené emoce ovlivňují zdraví.",
+
+    why:
+        "Jedna z nejlepších knih o souvislostech mezi psychikou a nemocemi."
+},
+
+{
+    title: "Atomové návyky",
+    author: "James Clear",
+
+    keywords: [
+        "návyky","motivace","disciplína",
+        "změna života","produktivita",
+        "cíle","zvyk","prokrastinace",
+        "osobní rozvoj","úspěch"
+    ],
+
+    description:
+        "Praktický návod, jak pomocí malých změn vytvořit dlouhodobé návyky.",
+
+    why:
+        "Výborná kniha pro každého, kdo chce skutečně změnit své každodenní chování."
+},
+
+{
+    title: "Pět jazyků lásky",
+    author: "Gary Chapman",
+
+    keywords: [
+        "partnerské vztahy","láska","komunikace",
+        "manželství","partner","vztahy",
+        "blízkost","porozumění","rodina",
+        "citová potřeba"
+    ],
+
+    description:
+        "Autor popisuje pět základních způsobů, jak lidé vyjadřují a přijímají lásku.",
+
+    why:
+        "Doporučujeme párům i jednotlivcům, kteří chtějí zlepšit své vztahy."
+},
+
+{
+    title: "Citliví lidé",
+    author: "Elaine N. Aron",
+
+    keywords: [
+        "citlivost","vysoce citlivý člověk",
+        "HSP","úzkost","emoce",
+        "přecitlivělost","stres",
+        "vyčerpání","empatie","psychologie"
+    ],
+
+    description:
+        "Zásadní kniha o vysoce citlivých lidech a jejich specifickém prožívání.",
+
+    why:
+        "Pomáhá pochopit vlastní citlivost a naučit se s ní lépe pracovat."
+}
+];
