@@ -109,4 +109,151 @@ const books = [
         "Pomáhá lidem, kteří se příliš trápí názory druhých nebo chtějí lépe nastavovat své hranice."
 }
 
-];
+,
+
+{
+    title: "Uzdrav svá vnitřní zranění",
+    author: "Lise Bourbeau",
+
+    keywords: [
+        "odmítnutí","opuštění","ponížení","zrada","nespravedlnost",
+        "vnitřní zranění","emocionální bolest","sebehodnota",
+        "nejsem dost dobrý","nemám se rád","nízké sebevědomí",
+        "bolest z dětství","vztahy","opakující se vztahy",
+        "neustále se obětuji","potřebuji uznání","citová závislost",
+        "strach z opuštění","strach z odmítnutí","emoce"
+    ],
+
+    description:
+        "Známá kniha popisující pět základních emočních zranění a jejich projevy v každodenním životě.",
+
+    why:
+        "Vhodná pro každého, kdo opakuje stejné vztahové vzorce nebo chce lépe porozumět svým emocím."
+},
+
+{
+    title: "Cesta",
+    author: "Brandon Bays",
+
+    keywords: [
+        "emoce","potlačené emoce","odpuštění","vnitřní klid",
+        "uzdravení","psychika","psychosomatika","nemoc",
+        "trauma","vnitřní dítě","strach","úzkost",
+        "blok","emoční blok","seberozvoj",
+        "vnitřní změna","osobní růst","zdraví"
+    ],
+
+    description:
+        "Kniha představuje metodu práce s emocemi a jejich vlivem na tělo.",
+
+    why:
+        "Doporučujeme lidem, kteří hledají hlubší práci se svými emocemi."
+},
+
+{
+    title: "Tajemství",
+    author: "Rhonda Byrne",
+
+    keywords: [
+        "zákon přitažlivosti","myšlenky","pozitivní myšlení",
+        "manifestace","cíle","vděčnost","štěstí",
+        "spiritualita","změna života","hojnost"
+    ],
+
+    description:
+        "Populární kniha o zákonu přitažlivosti a síle myšlenek.",
+
+    why:
+        "Vhodná pro čtenáře se zájmem o osobní rozvoj a spiritualitu."
+},
+
+{
+    title: "Proměna",
+    author: "Wayne W. Dyer",
+
+    keywords: [
+        "ego","vnitřní klid","životní změna",
+        "smysl života","duchovní růst",
+        "seberozvoj","spiritualita","vnitřní svoboda",
+        "strach","odvaha"
+    ],
+
+    description:
+        "Inspirativní kniha o změně pohledu na sebe i svět.",
+
+    why:
+        "Pomáhá lidem, kteří hledají hlubší životní změnu."
+},
+
+{
+    title: "Zákon rezonance",
+    author: "Pierre Franckh",
+
+    keywords: [
+        "rezonance","vibrace","manifestace",
+        "pozitivní myšlení","spiritualita",
+        "přání","cíle","energie",
+        "životní změna","hojnost"
+    ],
+
+    description:
+        "Kniha vysvětluje princip rezonance a jeho využití v běžném životě.",
+
+    why:
+        "Vhodná pro čtenáře zajímající se o spiritualitu a osobní rozvoj."
+},
+
+{
+    title: "Myšlením k bohatství",
+    author: "Napoleon Hill",
+
+    keywords: [
+        "peníze","bohatství","úspěch","podnikání",
+        "motivace","cíle","sebedůvěra",
+        "finance","kariéra","podnikatel",
+        "myšlení","osobní růst"
+    ],
+
+    description:
+        "Klasická kniha o principech úspěchu a budování správného myšlení.",
+
+    why:
+        "Doporučujeme podnikatelům a lidem, kteří chtějí rozvíjet své schopnosti."
+},
+
+{
+    title: "Stíny před úsvitem",
+    author: "Teal Swan",
+
+    keywords: [
+        "stín","potlačené emoce","trauma",
+        "vnitřní dítě","úzkost",
+        "deprese","sebepoznání",
+        "osobní růst","psychologie"
+    ],
+
+    description:
+        "Kniha se věnuje práci s potlačenými částmi osobnosti.",
+
+    why:
+        "Pomáhá lépe pochopit vlastní psychiku a emoce."
+},
+
+{
+    title: "Koncept kontinua",
+    author: "Jean Liedloff",
+
+    keywords: [
+        "rodičovství","výchova","děti",
+        "miminko","kontakt",
+        "mateřství","vývoj dítěte",
+        "bezpečí","citová vazba"
+    ],
+
+    description:
+        "Klasická kniha o přirozeném vývoji dítěte a rodičovství.",
+
+    why:
+        "Výborná pro budoucí i současné rodiče."
+}
+    ];
