@@ -14,6 +14,8 @@ queryInput.addEventListener("keydown", function (e) {
 function searchBooks() {
 
     const text = queryInput.value.toLowerCase().trim();
+    console.log(text);
+console.log(books);
 
     if (text === "") {
 
