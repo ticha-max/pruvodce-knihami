@@ -1,139 +1,88 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Průvodce výběrem knih</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+<meta charset="UTF-8">
 
-        body{
-            font-family:Arial,Helvetica,sans-serif;
-            background:#f4f6f8;
-            color:#333;
-            padding:40px 20px;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .container{
-            max-width:900px;
-            margin:auto;
-            background:white;
-            border-radius:15px;
-            padding:35px;
-            box-shadow:0 10px 30px rgba(0,0,0,.1);
-        }
+<title>Průvodce výběrem knih</title>
 
-        h1{
-            text-align:center;
-            margin-bottom:15px;
-            color:#1f4b6e;
-        }
+<link rel="stylesheet" href="style.css">
 
-        p{
-            text-align:center;
-            margin-bottom:25px;
-            line-height:1.6;
-        }
-
-        textarea{
-            width:100%;
-            height:140px;
-            padding:15px;
-            font-size:16px;
-            border:1px solid #ccc;
-            border-radius:10px;
-            resize:vertical;
-        }
-
-        button{
-            margin-top:20px;
-            width:100%;
-            padding:15px;
-            background:#1f4b6e;
-            color:white;
-            border:none;
-            border-radius:10px;
-            cursor:pointer;
-            font-size:18px;
-        }
-
-        button:hover{
-            background:#163954;
-        }
-
-        #results{
-            margin-top:35px;
-        }
-
-        .book{
-            border:1px solid #ddd;
-            border-radius:10px;
-            padding:20px;
-            margin-bottom:20px;
-            background:#fafafa;
-        }
-
-        .book h2{
-            color:#1f4b6e;
-            margin-bottom:8px;
-        }
-
-        .author{
-            color:#666;
-            margin-bottom:12px;
-        }
-
-        .why{
-            margin-top:12px;
-            line-height:1.6;
-        }
-    </style>
 </head>
 
 <body>
 
 <div class="container">
 
-<h1>Průvodce výběrem knih</h1>
+    <div class="header">
 
-<p>
+        <h1>📚 Průvodce výběrem knih</h1>
 
-Popište vlastními slovy svou životní situaci nebo téma,
-které právě řešíte.
+        <p>
+            Popište vlastními slovy, co právě řešíte.
+            Doporučíme vám knihy, které by vám mohly pomoci.
+        </p>
 
-</p>
+    </div>
 
-<textarea id="query"
-placeholder="Například: Po rozvodu se cítím prázdná, mám úzkosti a nevím jak dál."></textarea>
+    <div class="content">
 
-<button onclick="searchBooks()">
+        <label for="query">
 
-Doporučit knihy
+            Co právě řešíte?
 
-</button>
+        </label>
 
-<div id="results"></div>
+        <textarea
+            id="query"
+            placeholder="Například: Po rozvodu se cítím prázdná. Mám úzkosti a nevím, jak dál."
+        ></textarea>
+
+        <div class="examples">
+
+            <strong>Můžete napsat například:</strong>
+
+            <ul>
+
+                <li>Mám úzkosti.</li>
+
+                <li>Pořád přitahuji stejné partnery.</li>
+
+                <li>Chci lépe porozumět svému tělu.</li>
+
+                <li>Nevím, jak vychovávat dítě bez křiku.</li>
+
+                <li>Zajímá mě psychosomatika.</li>
+
+                <li>Chci zvýšit sebevědomí.</li>
+
+            </ul>
+
+        </div>
+
+        <button id="searchButton">
+
+            Doporučit knihy
+
+        </button>
+
+        <div id="results"></div>
+
+    </div>
+
+    <div class="footer">
+
+        © Průvodce výběrem knih
+
+    </div>
 
 </div>
 
-<script>
+<script src="books.js"></script>
 
-const books=[];
-
-function searchBooks(){
-
-document.getElementById("results").innerHTML=
-
-"<p>Zatím je připravena kostra aplikace. Databázi knih doplníme v dalším kroku.</p>";
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
