@@ -256,4 +256,185 @@ const books = [
     why:
         "Výborná pro budoucí i současné rodiče."
 }
+    ,
+
+{
+    title: "Respektovat a být respektován",
+    author: "Pavel Kopřiva, Jana Nováčková a kol.",
+
+    keywords: [
+        "výchova","děti","rodiče","rodičovství","komunikace",
+        "respekt","křik","tresty","odměny","hranice",
+        "vztek dítěte","výchova bez křiku","vztah s dítětem",
+        "puberta","sourozenec","rodina","empatie",
+        "konflikty","naslouchání","důvěra"
+    ],
+
+    description:
+        "Praktická kniha o respektující komunikaci mezi rodiči a dětmi.",
+
+    why:
+        "Doporučujeme rodičům, kteří chtějí budovat vztah založený na respektu místo trestů."
+},
+
+{
+    title: "AHA! Rodičovství",
+    author: "Dr. Laura Markham",
+
+    keywords: [
+        "rodičovství","výchova","děti","emoce dítěte",
+        "vztek","sourozenci","respekt","komunikace",
+        "bezpečná vazba","empatie","laskavá výchova",
+        "hranice","rodina","důvěra","puberta"
+    ],
+
+    description:
+        "Moderní pohled na výchovu založenou na vztahu mezi rodičem a dítětem.",
+
+    why:
+        "Pomáhá rodičům zvládat náročné situace klidněji a s větším porozuměním."
+},
+
+{
+    title: "Kniha o mužství",
+    author: "Steve Biddulph",
+
+    keywords: [
+        "muž","mužství","partner","otec","syn",
+        "vztahy","sebevědomí","emoce muže",
+        "životní krize","identita","chlapec",
+        "rodina","partnerský vztah"
+    ],
+
+    description:
+        "Kniha o psychologii mužů, jejich vývoji a vztazích.",
+
+    why:
+        "Vhodná pro muže i ženy, které chtějí lépe porozumět mužskému světu."
+},
+
+{
+    title: "Rádce pravého muže",
+    author: "Robert Glover",
+
+    keywords: [
+        "hodný kluk","partnerství","mužství","sebevědomí",
+        "hranice","vztahy","závislost na uznání",
+        "potřebuji být oblíbený","asertivita",
+        "muž","partnerské problémy"
+    ],
+
+    description:
+        "Kniha pomáhá mužům opustit roli 'hodného kluka' a budovat zdravější vztahy.",
+
+    why:
+        "Doporučujeme mužům, kteří mají problém nastavovat hranice nebo se příliš přizpůsobují."
+},
+
+{
+    title: "Holotropní vědomí",
+    author: "Stanislav Grof",
+
+    keywords: [
+        "vědomí","transpersonální psychologie",
+        "porod","trauma","spiritualita",
+        "sebepoznání","holotropní dýchání",
+        "nevědomí","psychologie","duchovní růst"
+    ],
+
+    description:
+        "Jedna z nejvýznamnějších knih transpersonální psychologie.",
+
+    why:
+        "Pro čtenáře, kteří chtějí jít za hranice klasické psychologie."
+},
+
+{
+    title: "Tělo východu, mysl západu",
+    author: "Anodea Judith",
+
+    keywords: [
+        "čakry","energie","psychosomatika",
+        "spiritualita","sebepoznání",
+        "emoce","bloky","duchovní růst",
+        "rovnováha","tělo","mysl"
+    ],
+
+    description:
+        "Spojuje západní psychologii s východním pohledem na energetický systém člověka.",
+
+    why:
+        "Vhodná pro zájemce o propojení psychologie a spirituality."
+},
+
+{
+    title: "Vědomé milování",
+    author: "Diana Richardson",
+
+    keywords: [
+        "sexualita","partnerství","intimita",
+        "blízkost","vědomý vztah",
+        "partnerský život","láska",
+        "muž a žena","sexualita ve vztahu"
+    ],
+
+    description:
+        "Kniha o vědomém prožívání partnerské intimity.",
+
+    why:
+        "Pomáhá párům prohloubit vzájemnou blízkost."
+},
+
+{
+    title: "Posvátnost sexuality",
+    author: "Daniel Odier",
+
+    keywords: [
+        "tantra","sexualita","spiritualita",
+        "partnerský vztah","vědomé milování",
+        "intimita","energie","láska"
+    ],
+
+    description:
+        "Kniha propojující spiritualitu a partnerskou intimitu.",
+
+    why:
+        "Pro čtenáře zajímající se o vědomou sexualitu a tantru."
+},
+
+{
+    title: "Matrix Božský zdroj",
+    author: "Gregg Braden",
+
+    keywords: [
+        "energie","spiritualita","vědomí",
+        "kvantová fyzika","manifestace",
+        "intuice","realita","vesmír",
+        "propojení","zákon přitažlivosti"
+    ],
+
+    description:
+        "Autor propojuje moderní vědu s duchovními principy.",
+
+    why:
+        "Vhodná pro čtenáře hledající souvislosti mezi vědou a spiritualitou."
+},
+
+{
+    title: "Více než léčba – Homeopatie",
+    author: "Jiří Čehovský",
+
+    keywords: [
+        "homeopatie","zdraví","léčba",
+        "alternativní medicína","imunita",
+        "chronické potíže","nemoc",
+        "prevence","psychosomatika"
+    ],
+
+    description:
+        "Přehled možností využití homeopatie v praxi.",
+
+    why:
+        "Pro zájemce o celostní přístup ke zdraví."
+}
     ];
