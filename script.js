@@ -30,6 +30,7 @@ console.log(books);
     }
 
     const found = [];
+    alert("Počet knih: " + books.length);
 
     books.forEach(book => {
 
