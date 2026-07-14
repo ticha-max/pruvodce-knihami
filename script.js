@@ -1,3 +1,128 @@
+// odstranění diakritiky
+function normalize(text) {
+
+    return text
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
+}
+// česká synonyma
+
+const synonyms = {
+
+    uzkost: [
+        "uzkost",
+        "uzkosti",
+        "panika",
+        "panicky",
+        "panicka",
+        "strach",
+        "neklid",
+        "obavy"
+    ],
+
+    trauma: [
+        "trauma",
+        "traumaticky",
+        "sok",
+        "zraneni",
+        "bolest"
+    ],
+
+    sebevedomi: [
+        "sebevedomi",
+        "nejsem dost dobry",
+        "nejistota",
+        "pochybuji o sobe"
+    ],
+
+    vztahy: [
+        "partner",
+        "partnerka",
+        "rozchod",
+        "rozvod",
+        "nevera",
+        "manzel",
+        "manzelka"
+    ],
+
+    rodicovstvi: [
+        "dite",
+        "deti",
+        "rodice",
+        "vychova",
+        "mama",
+        "otec",
+        "syn",
+        "dcera"
+    ]
+
+};
+function levenshtein(a, b) {
+
+    if (a === b) return 0;
+
+    const matrix = [];
+
+    for (let i = 0; i <= b.length; i++) {
+        matrix[i] = [i];
+    }
+
+    for (let j = 0; j <= a.length; j++) {
+        matrix[0][j] = j;
+    }
+
+    for (let i = 1; i <= b.length; i++) {
+
+        for (let j = 1; j <= a.length; j++) {
+
+            if (b.charAt(i - 1) === a.charAt(j - 1)) {
+
+                matrix[i][j] = matrix[i - 1][j - 1];
+
+            } else {
+
+                matrix[i][j] = Math.min(
+
+                    matrix[i - 1][j - 1] + 1,
+                    matrix[i][j - 1] + 1,
+                    matrix[i - 1][j] + 1
+
+                );
+
+            }
+
+        }
+
+    }
+
+    return matrix[b.length][a.length];
+
+}
+function similar(word, keyword) {
+
+    word = normalize(word);
+    keyword = normalize(keyword);
+
+    if (word === keyword)
+        return 5;
+
+    if (word.includes(keyword))
+        return 4;
+
+    if (keyword.includes(word))
+        return 4;
+
+    if (levenshtein(word, keyword) <= 1)
+        return 3;
+
+    if (levenshtein(word, keyword) == 2)
+        return 2;
+
+    return 0;
+
+}
 const queryInput = document.getElementById("query");
 const searchButton = document.getElementById("searchButton");
 const results = document.getElementById("results");
