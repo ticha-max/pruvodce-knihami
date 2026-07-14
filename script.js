@@ -138,9 +138,7 @@ queryInput.addEventListener("keydown", function (e) {
 
 function searchBooks() {
 
-    const text = queryInput.value.toLowerCase().trim();
-    console.log(text);
-console.log(books);
+    const text = normalize(queryInput.value);
 
     if (text === "") {
 
@@ -154,17 +152,43 @@ console.log(books);
         return;
     }
 
+    const words = text
+        .split(/[\s,.;:!?()\n]+/)
+        .filter(w => w.length > 1);
+
     const found = [];
 
     books.forEach(book => {
 
         let score = 0;
 
-        book.keywords.forEach(word => {
+        book.keywords.forEach(keyword => {
 
-            if (text.includes(word.toLowerCase())) {
-                score++;
-            }
+            const k = normalize(keyword);
+
+            words.forEach(word => {
+
+                score += similar(word, k);
+
+            });
+
+            Object.values(synonyms).forEach(group => {
+
+                if (group.includes(k)) {
+
+                    words.forEach(word => {
+
+                        group.forEach(syn => {
+
+                            score += similar(word, syn);
+
+                        });
+
+                    });
+
+                }
+
+            });
 
         });
 
@@ -172,7 +196,7 @@ console.log(books);
 
             found.push({
                 ...book,
-                score: score
+                score
             });
 
         }
@@ -185,15 +209,19 @@ console.log(books);
 
         results.innerHTML = `
             <div class="book">
-                <h2>Bohužel jsme nenašli vhodnou knihu</h2>
+                <h2>Nepodařilo se najít přesnou shodu</h2>
 
                 <p>
                 Zkuste svůj problém popsat jinými slovy.
+                Například místo "bojím se lidí"
+                napište "úzkost", "strach", "panika",
+                "sebevědomí", "vztahy" nebo "trauma".
                 </p>
             </div>
         `;
 
         return;
+
     }
 
     let html = "";
@@ -224,7 +252,7 @@ console.log(books);
 
             <div class="score">
 
-                Shoda: ${book.score}
+                Relevance: ${book.score}
 
             </div>
 
@@ -235,5 +263,7 @@ console.log(books);
     });
 
     results.innerHTML = html;
+
+}
 
 }
