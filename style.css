@@ -34,6 +34,53 @@ body{
 
 .header{
 
+    .logoCircle{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#8e6f4b;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:42px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.smallTitle{
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    opacity:.85;
+
+    margin-bottom:10px;
+
+}
+
+.logoText h1{
+
+    margin-bottom:15px;
+
+}
     background:linear-gradient(135deg,#8e6f4b,#b79568);
 
     color:white;
