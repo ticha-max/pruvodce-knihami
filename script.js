@@ -310,3 +310,14 @@ function searchBooks() {
     results.innerHTML = html;
 
 }
+document.querySelectorAll(".topic").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        queryInput.value = button.textContent;
+
+        searchBooks();
+
+    });
+
+});
